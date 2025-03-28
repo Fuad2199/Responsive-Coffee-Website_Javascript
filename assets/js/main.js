@@ -86,3 +86,11 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 /*=============== SCROLL SECTIONS ACTIVE LINK ENDS ===============*/
 
+/*=============== SCROLL REVEAL ANIMATIONS ===============*/
+const sr = ScroollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 300,
+    // reset: true, // Animation repeat
+})
