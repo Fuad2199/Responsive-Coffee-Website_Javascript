@@ -1,5 +1,4 @@
 
-
 // ============== NAV MENU STARTS ==============
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -45,7 +44,9 @@ const swiperPopular = new Swiper('.popular__swiper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 32,
-    slidesPerView: 'auto',
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    loopSlides: 4,
     centeredSlices: 'auto',
 
     breakpoints: {
@@ -87,7 +88,7 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 /*=============== SCROLL SECTIONS ACTIVE LINK ENDS ===============*/
 
-/*=============== SCROLL REVEAL ANIMATIONS ===============*/
+/*=============== SCROLL REVEAL ANIMATIONS STARTS ===============*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
@@ -107,8 +108,9 @@ sr.reveal(`.home__title`, {delay: 3500})
 sr.reveal(`.home__data, .home__sticker`, {delay: 4000})
 sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__images`, {origin: 'right'})
-sr.reveal(`.about__coffee`, {delay: 1000})
-sr.reveal(`.about__leaf-1, .about__leaf-2`, {delay: 1400, rotate: {z: 90}})
+sr.reveal(`.about__image--coffee`, {delay: 1000})
+sr.reveal(`.about__image--leaf-1, .about__image--leaf-2`, {delay: 1400, rotate: {z: 90}})
 sr.reveal(`.products__card, .contact__info`, {interval: 100})
 sr.reveal(`.contact__shape`, {delay: 600, scale: 0})
 sr.reveal(`.contact__delivery`, {delay: 1200})
+/*=============== SCROLL REVEAL ANIMATIONS ENDS ===============*/

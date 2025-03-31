@@ -1,4 +1,10 @@
 /*=============== ABOUT STARTS ===============*/
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about__container{
     row-gap: 3rem;
 }
@@ -31,23 +37,22 @@
     position: absolute;
 }
 
-.about__coffee {
+.about__image--coffee {
     width: 280px;
     filter: drop-shadow(0 8px 16px hsla(166, 85%, 8%, .5));
 }
 
-.about__leaf-1,
-.about__leaf-2{
+.about__image--leaf{
     width: 50px;
 }
 
-.about__leaf-1{
+.about__image--leaf-1{
     top: .5rem;
     left: 3.5rem;
     rotate: -105deg;
 }
 
-.about__leaf-2{
+.about__image--leaf-2{
     top: 7.75rem;
     right: 2.5rem;
     rotate: -15deg;
