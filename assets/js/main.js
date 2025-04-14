@@ -44,9 +44,7 @@ const swiperPopular = new Swiper('.popular__swiper', {
     loop: true,
     grabCursor: true,
     spaceBetween: 32,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    loopSlides: 4,
+    slidesPerView: 'auto',
     centeredSlices: 'auto',
 
     breakpoints: {

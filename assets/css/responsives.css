@@ -136,11 +136,12 @@
         height: 490px;
     }
     .home__coffee{
-        width: 280px;
-        top: -6rem;
+        width: 230px;
+        top: 0rem;
+        left: 9rem;
     }
     .home__splash{
-        width: 615px;
+        width: 604px;
         left: -5rem;
         bottom: .75rem;
     }
@@ -155,6 +156,7 @@
     .home__bean-2{
         bottom: 10.75rem;
         right: 6.5rem;
+        left: 360px;
     }
     .home__ice-1{
         width: 90px;
@@ -229,8 +231,8 @@
         margin-bottom: 4rem;
     }
     .about__shape{
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
     }
     .about__coffee{
         width: 400px;
